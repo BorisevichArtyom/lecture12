@@ -22,17 +22,14 @@ public class Main {
                 new ClassPathXmlApplicationContext("spring-context.xml");
 
         UserDaoImplem daoImpl = xmlApplicationContext.getBean(UserDaoImplem.class);
-//
-//        userDaoImplem.addUser(user);
-//        daoImpl.deleteUser(user);
-//        daoImpl.addUser(user);
 
-        System.out.println(UserDaoImplem.FindIdUserByEmail(user));
+        daoImpl.addUser(user);
+        daoImpl.deleteUser(user);
+        daoImpl.addUser(user);
+
         user.setFirstName("Aleksandre");
-        System.out.println(user.getEmail());
 
         daoImpl.updateUser(user);
-
 
         System.out.println(daoImpl.getAllUsersPagination(3, 1));
 
