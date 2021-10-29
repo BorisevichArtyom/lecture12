@@ -23,9 +23,9 @@ public class Main {
 
         UserDaoImplem daoImpl = xmlApplicationContext.getBean(UserDaoImplem.class);
 
-        daoImpl.addUser(user);
-        daoImpl.deleteUser(user);
-        daoImpl.addUser(user);
+//        daoImpl.addUser(user);
+//        daoImpl.deleteUser(user);
+//        daoImpl.addUser(user);
 
         user.setFirstName("Aleksandre");
 
